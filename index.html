@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Battle Ready Fitness</title>
+  </head>
+  <body>
+    <!-- Login Modal -->
+<div
+  class="modal fade"
+  id="loginModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="loginModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Login
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="loginEmail">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="loginEmail"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="loginPassword"
+              placeholder="Password"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">
+          Close
+        </button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Signup Modal -->
+
+<div
+  class="modal fade"
+  id="signupModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="signup"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Signup
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="signupName">Name</label>
+            <input
+              type="string"
+              class="form-control"
+              id="signupName"
+              aria-describedby="nameHelp"
+              placeholder="Full name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="signupEmail"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="signupPassword"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="signupPasswordConfirm">Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="signupPasswordConfirm"
+              placeholder="Confirm Password"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Signup</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark">
+  <a href="" class="navbar-brand">
+    <h3 class="mb-0 red">BRFit</h3>
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#mainNavbar"
+    aria-controls="mainNavbar"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mainNavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#"
+          data-toggle="modal"
+          data-target="#loginModal"
+          >LOGIN</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#"
+          data-toggle="modal"
+          data-target="#signupModal"
+        >
+          SIGNUP
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Video Carousel -->
+<section id="carousel">
+  <div class="overlay"></div>
+    <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+  >
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <video class="bg-video" autoplay muted loop>
+          <source src="img/boxing-kids.mp4" type="video/mp4" />
+          Your browser does not support video playback
+        </video>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="carousel-title red">Are you battle ready?</h1>
+          <h3>Danny Missin - Personal Trainer</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="bg-video" autoplay muted loop>
+          <source src="img/legs-workout.mp4" type="video/mp4" />
+          Your browser does not support video playback
+        </video>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="carousel-title red">Are you battle ready?</h1>
+          <p>Danny Missin - Personal Trainer</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <video class="bg-video" autoplay muted loop>
+          <source src="img/situps.mp4" type="video/mp4" />
+          Your browser does not support video playback
+        </video>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="carousel-title red">Are you battle ready?</h1>
+          <p>Danny Missin - Personal Trainer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+<div class="jumbotron jumbotron-fluid text-center align-center m-0 p-4">
+  <div class="container">
+    <h3 class="display-5">
+      "WHAT SEEMS IMPOSSIBLE TODAY WILL SOON BECOME YOUR WARM-UP"
+    </h3>
+  </div>
+</div>
+
+<div class="container-fluid container-about container-about-1">
+  <div class="container p-3 text-center ">
+    <h5 class="card-title red">About Battle Ready</h5>
+    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, iure in impedit dolorum vel illum animi beatae nihil aut, perferendis sint repudiandae eligendi unde possimus error a eveniet distinctio adipisci voluptates odit? Perferendis sit voluptatibus animi, dignissimos ipsam cumque quia eveniet obcaecati provident sequi unde dolorum, laboriosam voluptates in tenetur. <hr> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta earum sed provident tempore voluptate a nobis quia, illo accusantium fugiat. Facilis cum iusto non magnam quo doloribus omnis suscipit inventore? Autem maiores magni adipisci libero perferendis quaerat non temporibus. Nulla?</p>
+  </div>    
+</div>
+    
+<div class="container-fluid container-danny p-5">
+  <div class="row">
+    <div class="col-5">
+      <img class="img-fluid" src="img/danny.jpeg" alt="" />
+    </div>
+    <div class="col-7 p-4">
+      <h5>ABOUT ME</h5>
+      <h3 class="red">DANNY MISSIN</h3>
+      <hr />
+      <p>
+        Hello and welcome to Battle Ready Fitness! ​ <hr />After nearly 15
+        years in high level competitive sports and over 8 years working as a
+        personal trainer I'm able to bring you Battle Ready Fitness, a
+        website dedicated to getting you to where you want to be without
+        cutting corners for sustainable, life changing results. ​ <hr />I've
+        had the pleasure of working alongside some of the worlds leading
+        fitness professionals as a student, an athlete and even as a
+        colleague, learning everyday to separate the myths from the science
+        to bring you the best training available and now for the first time
+        available online direct to your device. ​ <hr />So your journey to
+        the YOU that you dream of starts here, so... ARE YOU BATTLE READY?
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid container-about container-about-2">
+  <div class="container p-3 text-center ">
+      <h5 class="card-title red">1-2-1 Personal Training</h5>
+      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, iure in impedit dolorum vel illum animi beatae nihil aut, perferendis sint repudiandae eligendi unde possimus error a eveniet distinctio adipisci voluptates odit? Perferendis sit voluptatibus animi, dignissimos ipsam cumque quia eveniet obcaecati provident sequi unde dolorum, laboriosam voluptates in tenetur. <hr> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta earum sed provident tempore voluptate a nobis quia, illo accusantium fugiat. Facilis cum iusto non magnam quo doloribus omnis suscipit inventore? Autem maiores magni adipisci libero perferendis quaerat non temporibus. Nulla?</p>
+  </div>
+</div>
+<div class="container-fluid container-about container-about-3">
+  <div class="container p-3 text-center ">
+      <h5 class="card-title red">Online Training</h5>
+      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, iure in impedit dolorum vel illum animi beatae nihil aut, perferendis sint repudiandae eligendi unde possimus error a eveniet distinctio adipisci voluptates odit? Perferendis sit voluptatibus animi, dignissimos ipsam cumque quia eveniet obcaecati provident sequi unde dolorum, laboriosam voluptates in tenetur. <hr> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta earum sed provident tempore voluptate a nobis quia, illo accusantium fugiat. Facilis cum iusto non magnam quo doloribus omnis suscipit inventore? Autem maiores magni adipisci libero perferendis quaerat non temporibus. Nulla?</p>
+  </div> 
+</div>
+<section>
+  <div class="container-fluid">
+    <div class="row m-4">
+      <div class="col">
+          <div class="card text-center bg-red white" >
+              <div class="card-body">
+                <h3 class="card-title">Danny Missin</h3>
+                <h5>Personal Trainer</h5>
+                <p class="card-text">Tel: 07468 533519</p>
+                <p class="card-text">info@mysite.com</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="col">
+        <form>
+            <div class="form-group">
+              <label for="contactName" class="red">Name</label>
+              <input type="name" class="form-control" id="contactName" aria-describedby="nameHelp" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="contactEmail" class="red">Email address</label>
+                <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+            <div class="form-group">
+              <label for="contactTel" class="red">Telephone</label>
+              <input type="number" class="form-control" id="contactTel" placeholder="Telephone">
+            </div>
+            <div class="form-group">
+                <label for="contactMsg" class="red">Message</label>
+                <textarea type="number" class="form-control" id="contactMsg" placeholder="Message" rows="3"></textarea>
+              </div>
+            <button type="submit" class="btn btn-outline-danger">Submit</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
