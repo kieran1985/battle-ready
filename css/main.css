@@ -7479,7 +7479,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 body {
   font-family: 'Roboto', sans-serif;
-  background: #000;
+  background: #333333;
   font-weight: 300; }
 
 .red {
@@ -7541,9 +7541,17 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/barbell.jpeg); }
   .container-about-3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/leg-press.jpeg); }
+  .container-about-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/kickboxer.jpeg); }
+  .container-about-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/dumbell-girl.jpeg); }
+  .container-about-6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/healthy-food.jpeg); }
 
 .container-danny {
-  color: white; }
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/plates.jpeg);
+  background-size: cover; }
 
 @media (max-width: 768px) {
   .navbar {
