@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon app.js",
     "sass": "node-sass public/sass/main.scss public/css/main.css -w",
     "all": "npm-run-all --parallel dev sass"
